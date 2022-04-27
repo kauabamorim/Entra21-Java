@@ -14,7 +14,7 @@ public class aumentoSalarial {
         salario = scanner.nextFloat();
 
         if (salario <= 1200) {
-            reajusteSalario = (salario / 100) * 30;
+            reajusteSalario = (salario / 100) * 30;     /* Porcentagem, float variavel = 0.03f*/
             reajusteTotal = salario + reajusteSalario;
 
             System.out.println("=== REAJUSTE SALARIAL ===");
