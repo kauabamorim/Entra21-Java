@@ -1,3 +1,4 @@
+package lista01;
 import java.util.Scanner;
  
 public class  media {
