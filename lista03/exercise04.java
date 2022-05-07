@@ -7,12 +7,25 @@ public class exercise04 {
         Scanner scanner = new Scanner(System.in);
 
         int numero = 0;
+        int menor = 0;
+        int maior = 0 ;
 
-        for(int i = 0; i < 5; i++){             // MUDAR PARA 10
+        for(int i = 0; i < 10; i++){
             System.out.print("Escreva um numero: ");
             numero = scanner.nextInt();
+
+            if(i == 0){
+                maior = numero;
+                menor = numero;
+
+            }else if(numero> maior) {
+                maior = numero;
+
+            } else if(numero < menor){
+                menor = numero;
+            }
         }
-        System.out.println("Media é: " + (numero / 5));
+        System.out.println("MAIOR: " + maior + " MENOR: " + menor);
     }
     
 }
