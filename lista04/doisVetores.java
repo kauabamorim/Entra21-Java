@@ -2,13 +2,12 @@ package lista04;
 
 import java.util.Scanner;
 
-import Loop.fatorial;
-
 public class doisVetores {
 
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+        
         int numerosIniciais[] = new int[10];
         int fatoriais[] = new int[10];
         int fatorial = 1;
