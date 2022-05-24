@@ -15,6 +15,8 @@ public class temperaturaConvert {
         System.out.print("esta quantos Fahrenheit? ");
         fahrenheit = scanner.nextFloat();
 
+        scanner.close();
+
         celsius = (fahrenheit - 32) * 5/9;
 
         System.out.printf("Sua conversao é: " + "%.2f", celsius);

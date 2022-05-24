@@ -19,6 +19,8 @@ public class retangulo {
         System.out.print("digite a base: ");
         base = scanner.nextFloat();
 
+        scanner.close();
+
         dimensaoRetangulo = altura * base;
 
         System.out.printf("As dimensões do retangulo é: " + "%.2f", dimensaoRetangulo);

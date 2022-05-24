@@ -10,6 +10,8 @@ public class fatorial {
         System.out.print("Digite um numero: ");
         numero = scanner.nextInt();
 
+        scanner.close();
+
         for(fat = 1; numero > 1; numero = numero - 1) {
             fat = fat * numero;
         }

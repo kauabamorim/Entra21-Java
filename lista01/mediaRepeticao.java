@@ -11,6 +11,8 @@ public class mediaRepeticao {
         System.out.print("Escreva quantas notas voce tem: ");
         notas = scanner.nextInt();
 
+        scanner.close();
+
         for(int i = 0; i < notas; i++) {
             System.out.print("Informe a " + (i + 1) + "° nota: ");
             nota += scanner.nextFloat();

@@ -35,5 +35,6 @@ public class aumentoSalarial {
         {
             System.out.println("Seu salario continua a ser: " + salario);
         }
+        scanner.close();
     }
 }

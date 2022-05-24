@@ -22,6 +22,7 @@ public class idadeEmDias {
         System.out.print("Digite o seu dia de nascimento: ");
         dia = scanner.nextInt();
 
+        scanner.close();
 
 
         somaDias = (ano * 365) + (mes * 30) + dia;

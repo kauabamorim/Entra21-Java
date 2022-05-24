@@ -7,7 +7,7 @@ public class doisVetores {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        
+
         int numerosIniciais[] = new int[10];
         int fatoriais[] = new int[10];
         int fatorial = 1;
@@ -22,17 +22,18 @@ public class doisVetores {
         }
 
         for (int i = 0; i < numerosIniciais.length; i++) {
-            fatorial = 1; 
+            fatorial = 1;
             for (int j = numerosIniciais[i]; j > 0; j--) {
                 fatorial *= j;
             }
             fatoriais[quantidadeFatorial] = fatorial;
             quantidadeFatorial++;
         }
+        scanner.close();
 
         System.out.print("\033[H\033[2J");
         System.out.flush();
-            
+
         for (int i : fatoriais)
             System.out.println(i);
     }

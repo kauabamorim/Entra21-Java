@@ -20,6 +20,8 @@ public class idade {
         System.out.print("Digite sua idade em dias: ");
         idadeEmDias = scanner.nextInt();
 
+        scanner.close();
+
         anoEmDias =  idadeEmDias / diasNoAno;
         meses = (idadeEmDias % diasNoAno) / 30;
         dias = (idadeEmDias % diasNoAno) % 30;

@@ -25,6 +25,8 @@ public class  mediaEFrquencia {
         System.out.print("Diga sua frequencia: ");
         frequencia = scanner.nextInt();
 
+        scanner.close();
+
         media = (nota1 + nota2 + nota3) / 3;
 
         if(media < 7.0)

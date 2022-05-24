@@ -18,6 +18,8 @@ public class salario {
         System.out.print("Digite o valor do Reajuste Salarial: ");
         reajuste = scanner.nextFloat();
 
+        scanner.close();
+        
         reajusteSalario = (salario * (reajuste / 100));
 
         reajusteTotal = reajusteSalario + salario;

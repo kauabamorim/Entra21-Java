@@ -28,6 +28,8 @@ public class mediaPonderada {
         System.out.print("Nota 3: ");
         nota3 = scanner.nextFloat();
 
+        scanner.close();
+        
         somaNotaEPeso1 = nota1 * peso1;
         somaNotaEPeso2 = nota2 * peso2;
         somaNotaEPeso3 = nota3 * peso3;

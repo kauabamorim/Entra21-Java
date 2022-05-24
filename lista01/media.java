@@ -23,6 +23,8 @@ public class  media {
    
         System.out.print("digite sua nota: ");
         nota3 = scanner.nextFloat();
+
+        scanner.close();
  
         media = (nota1 + nota2 + nota3) / 3;
  

@@ -29,6 +29,8 @@ public class eleitores {
         System.out.println("O percentual de votos nulos foi de: " + percentuaDeVotosNulos + "%");
         System.out.println("O percentual de votos validos foi de: " + percentuaDeVotosValidos + "%");
 
+        scanner.close();
+
         /* Pega uma coisa faz * 100 e / pelo total*/
 
 
