@@ -1,3 +1,5 @@
+package OrientacaoObjeto;
+
 public class SistemaProfessor {
     public static void main(String[] args) {
         

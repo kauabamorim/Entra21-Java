@@ -1,3 +1,4 @@
+package OrientacaoObjeto;
 
 public class Professor {
 
@@ -49,7 +50,7 @@ public class Professor {
         this.formacao = formacao;
     }
 
-
+    // metodo
     public void cadastroProfessor() {
         System.out.println("\nProfessor cadastrado!!");
     }
