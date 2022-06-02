@@ -20,7 +20,7 @@ public class Professor {
         return nome;
     }
 
-    // definir
+    // atribuir
     public void setNome(String nome) {
         this.nome = nome;
     }

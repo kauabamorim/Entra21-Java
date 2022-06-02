@@ -3,8 +3,10 @@ package OrientacaoObjeto;
 public class SistemaProfessor {
     public static void main(String[] args) {
         
-        Turma java = new Turma("Java", 86592);
         Professor allan = new Professor("Allan", 23, 53689564, "Ciencias da computacao");
+
+        Turma java = new Turma("Java", 86592, allan);
+        Turma js = new Turma("Java", 86592, allan);
         
         System.out.println("Professor: " + allan.getNome());
         System.out.println("Idade: " + allan.getIdade() + " anos");

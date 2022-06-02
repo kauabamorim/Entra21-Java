@@ -4,13 +4,23 @@ public class Turma {
     private String nome;
     private int codigo;
     private int quantidadeAlunos;
+    private Professor professor;
     private Aluno[] alunos;   
 
-    public Turma (String nome, int codigo) {
+    public Turma (String nome, int codigo, Professor professor) {
         setNome(nome);
         setCodigo(codigo);
         quantidadeAlunos = 0;
         alunos = new Aluno[quantidadeAlunos];
+    }
+
+
+    public Professor getProfessor(){
+        return professor;
+    }
+
+    public void setProfessor(Professor professor) {
+        this.professor = professor;
     }
 
     public String getNome(){
