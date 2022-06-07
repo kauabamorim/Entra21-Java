@@ -1,3 +1,6 @@
+
+package lista04;
+
 import java.util.Scanner;
 
 public class uniaoDecrescente {
@@ -43,6 +46,8 @@ public class uniaoDecrescente {
                 }
             }
         }
+
+        scanner.close();
         for(int i : c){
             System.out.println(i);
         }

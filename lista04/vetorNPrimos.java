@@ -2,8 +2,6 @@ package lista04;
 
 import java.util.Scanner;
 
-import Loop.numeroPrimo;
-
 public class vetorNPrimos {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -32,6 +30,9 @@ public class vetorNPrimos {
             }
             numero++;
         }
+
+        scanner.close();
+        
         for(int i : numeroPrimo) {
             System.out.println(i);
         }

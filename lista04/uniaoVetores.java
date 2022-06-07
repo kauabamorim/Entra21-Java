@@ -37,6 +37,8 @@ public class uniaoVetores {
             C[i + 10] = B[i];
         }
 
+        scanner.close();
+        
         for (int i : C)
             System.out.println(i);
     }

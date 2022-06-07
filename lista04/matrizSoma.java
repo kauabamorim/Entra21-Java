@@ -1,3 +1,5 @@
+package lista04;
+
 import java.util.Scanner;
 
 public class matrizSoma {
@@ -12,6 +14,9 @@ public class matrizSoma {
             }
             System.out.println();
         }
+
+        scanner.close();
+        
         int soma = 0;
 
         for (int i = 0; i < matriz.length; i++) {

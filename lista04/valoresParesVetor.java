@@ -26,6 +26,8 @@ public class valoresParesVetor {
         System.out.print("\033[H\033[2J");
         System.out.flush();
 
+        scanner.close();
+        
         for(int i : a){
             System.out.println(i);
         }

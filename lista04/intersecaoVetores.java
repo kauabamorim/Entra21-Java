@@ -41,6 +41,8 @@ public class intersecaoVetores {
             }
         }
 
+        scanner.close();
+
         for (int i : C)
             System.out.println(i);
     }

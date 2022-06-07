@@ -1,3 +1,4 @@
+package lista04;
 
 import java.util.Scanner;
 
@@ -17,6 +18,9 @@ public class somaVetores {
 
             somatoria += a[i];
         }
+
+        scanner.close();
+        
         System.out.println("Soma Elementos:" + somatoria);
     }
 }
