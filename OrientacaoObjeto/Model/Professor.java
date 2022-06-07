@@ -7,6 +7,7 @@ public class Professor extends  Usuario{
 
     public Professor(String nome, int idade, int matricula, String formacao) {
         super(nome, idade, matricula);
+
         setFormacao(formacao);
     }
 
@@ -20,10 +21,17 @@ public class Professor extends  Usuario{
 
     // metodo
     public void boaTarde() {
+
         if (getNome() == "Allan") {
             
             System.out.println("\nBoa tarde " + getNome() + "!!!");
         }
     }
+
+    @Override // SobreEscrita de codigo
+    public double calcularSalario(double quantidadeHoras) {
+        return quantidadeHoras * 15; // 15 = valor por hora do professor(ficticio)
+    }
 }
+
 
