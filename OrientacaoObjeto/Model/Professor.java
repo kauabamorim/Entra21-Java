@@ -19,15 +19,6 @@ public class Professor extends  Funcionario{
         this.formacao = formacao;
     }
 
-    // metodo
-    public void boaTarde() {
-
-        if (getNome() == "Allan") {
-            
-            System.out.println("\nBoa tarde " + getNome() + "!!!");
-        }
-    }
-
     @Override // SobreEscrita de codigo
     public double calcularSalario(double quantidadeHoras) {
         return quantidadeHoras * 15; // 15 = valor por hora do professor(ficticio)
