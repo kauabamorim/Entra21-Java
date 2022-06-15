@@ -15,7 +15,6 @@ public class Turma {
         alunos = new ArrayList<Aluno>();
     }
 
-
     public List<Aluno> getAluno(){
         return alunos;
     }

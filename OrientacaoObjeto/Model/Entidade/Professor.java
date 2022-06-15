@@ -11,6 +11,26 @@ public class Professor extends  Funcionario{
         setFormacao(formacao);
     }
 
+    public boolean equals(Object obj) {
+        
+        // receita de bolo
+
+        if (obj == null) {
+            return false;
+        }
+        if (this == obj) {
+            return true;
+        }
+        if (this.getClass() != obj.getClass()) {
+            return false;
+        }
+        Professor professor = (Professor) obj;
+
+        return this.getNome().equals(professor.getNome()) 
+            && this.getIdade() == professor.getIdade()
+                && this.getMatricula() == professor.getMatricula();
+    }
+
     public String getFormacao(){
         return formacao;
     }
