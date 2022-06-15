@@ -20,6 +20,8 @@ public class exercicio05 {
         System.out.println("Escreva o C: ");
         c = scanner.nextFloat();
 
+        scanner.close();
+        
         if(a > b + c) 
         {
             System.out.println("Não formam um triangulo");

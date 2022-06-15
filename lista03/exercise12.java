@@ -9,7 +9,9 @@ public class exercise12 {
             int salario = 0, filhos = 0;
             int habi = 0;
             int ms = 0, mf = 0;
-            int salarioMaior = 0;
+            int salarioMaior;
+
+            scanner.close();
 
             for(int i = 0; i < 5; i++){
 

@@ -9,6 +9,9 @@ public class exercise03 {
         int numero = 0;
         int numeroFinal = 0;
         
+
+        scanner.close();
+        
         do{
             System.out.print("Escreva um numero: ");
             System.out.print("\nSair -----> 0");

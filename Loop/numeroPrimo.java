@@ -14,6 +14,8 @@ public class numeroPrimo {
         System.out.print("Informe um numero: ");
         numero = scanner.nextInt();
 
+        scanner.close();
+        
         for(int i = 2; i < numero; i++){
             if(numero % i == 0){
                 isPrimo = false;

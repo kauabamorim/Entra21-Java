@@ -1,15 +1,11 @@
 package lista03;
 
-import java.util.Scanner;
-
 public class exercise08 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
         System.out.print("\033[H\033[2J");
         System.out.flush();
 
-        int numero = 0;
         boolean isPrimo = true;
 
         for (int j = 92; j < 107; j++) {

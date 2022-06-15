@@ -6,7 +6,7 @@ public class exercicio03 {
 
         Scanner scanner = new Scanner(System.in);
 
-        int numeroParOuImpar, sobraNumeroParImpar, total;
+        int numeroParOuImpar, sobraNumeroParImpar;
 
         System.out.print("\033[H\033[2J"); 
         System.out.flush();
@@ -14,6 +14,8 @@ public class exercicio03 {
         System.out.println("Digite um numero: ");
         numeroParOuImpar = scanner.nextInt();
         
+        scanner.close();
+
         sobraNumeroParImpar = (numeroParOuImpar % 2);
 
 

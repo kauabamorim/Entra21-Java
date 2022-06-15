@@ -19,6 +19,8 @@ public class exercicio01 {
         System.out.println("outro Numero: ");
         numero2 = scanner.nextInt();
 
+        scanner.close();
+        
         total = numero1 % numero2;
 
         if(total > 0 ) 

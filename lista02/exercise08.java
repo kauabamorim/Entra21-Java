@@ -1,8 +1,6 @@
 package lista02;
 import java.util.Scanner;
 
-import javax.xml.stream.events.NotationDeclaration;
-
 public class exercise08 {
     public static void main(String[] args) {
 
@@ -24,6 +22,8 @@ public class exercise08 {
         System.out.println("Digite o seu codigo de Aluno: ");
         codigoAluno = scanner.nextInt();
 
+        scanner.close();
+        
         if(codigoAluno == codigoAlunoA) 
         {
             if(notaAlunoA1 > notaAlunoA2 && notaAlunoA1 > notaAlunoA3)

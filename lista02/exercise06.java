@@ -21,6 +21,8 @@ public class exercise06 {
         System.out.println("Valor lado");
         c = scanner.nextInt();
 
+        scanner.close();
+        
         if(a == b && a == c) 
         {
             System.out.print("\033[H\033[2J"); 

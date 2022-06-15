@@ -10,6 +10,8 @@ public class exercise04 {
         int menor = 0;
         int maior = 0 ;
 
+        scanner.close();
+        
         for(int i = 0; i < 10; i++){
             System.out.print("Escreva um numero: ");
             numero = scanner.nextInt();

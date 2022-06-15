@@ -11,6 +11,7 @@ public class fatorial {
         System.out.print("Digite um numero: ");
         numero = scanner.nextInt();
 
+        scanner.close();
         for(int i = numero; i >= 1; i--) {
             fat *= i;
         }

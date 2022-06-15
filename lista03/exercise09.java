@@ -13,6 +13,8 @@ public class exercise09 {
         System.out.println("Informe um Numero: ");
         numero = scanner.nextInt();
 
+        scanner.close();
+
         for(int i = 1; i <= numero; i++){
             fator = 1;
 

@@ -20,6 +20,8 @@ public class exercise02 {
         System.out.print("\033[H\033[2J"); 
         System.out.flush();
 
+        scanner.close();
+        
         if(n1 > n2 && n1 >n3) 
         {
             System.out.print("\033[H\033[2J"); 

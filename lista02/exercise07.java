@@ -11,6 +11,8 @@ public class exercise07 {
         System.out.println("Digite sua idade: ");
         idade = scanner.nextInt();
 
+        scanner.close();
+        
         switch(idade) 
         {
             case 5:

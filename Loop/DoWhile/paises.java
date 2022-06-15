@@ -21,6 +21,8 @@ public class paises {
         System.out.println("taxa de crescimento: ");
         taxaB = scanner.nextFloat();
         
+        scanner.close();
+        
         int anos = 0;
 
         while(populacaoA <= populacaoB){

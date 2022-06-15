@@ -9,6 +9,9 @@ public class exercicio06 {
         int numero = 0;
         int fat = 1;
         
+
+        scanner.close();
+        
         System.out.print("escreva um numero: ");
         numero = scanner.nextInt();
 

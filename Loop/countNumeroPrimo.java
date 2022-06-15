@@ -15,6 +15,8 @@ public class countNumeroPrimo {
         System.err.print("Informe um numero: ");
         numero = scanner.nextInt();
 
+        scanner.close();
+        
         for (int j = 0; j < numero; numero--) {
 
             isPrimo = true;
