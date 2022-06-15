@@ -1,4 +1,4 @@
-package OrientacaoObjeto.Model;
+package OrientacaoObjeto.Model.Entidade;
 
 public class Diretor extends Funcionario{
 

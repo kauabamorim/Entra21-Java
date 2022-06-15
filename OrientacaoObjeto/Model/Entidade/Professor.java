@@ -1,4 +1,4 @@
-package OrientacaoObjeto.Model;
+package OrientacaoObjeto.Model.Entidade;
 
 public class Professor extends  Funcionario{
 
@@ -17,15 +17,6 @@ public class Professor extends  Funcionario{
 
     public void setFormacao(String formacao) {
         this.formacao = formacao;
-    }
-
-    // metodo
-    public void boaTarde() {
-
-        if (getNome() == "Allan") {
-            
-            System.out.println("\nBoa tarde " + getNome() + "!!!");
-        }
     }
 
     @Override // SobreEscrita de codigo
