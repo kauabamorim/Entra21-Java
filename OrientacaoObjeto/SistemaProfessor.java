@@ -14,9 +14,13 @@ public class SistemaProfessor {
         List<Professor> professores = new ArrayList<Professor>();
         System.out.println(professores.size());
 
-        Professor professor = new Professor("A", 15, 2314, "Ciencias");
+        Professor professor = new Professor("Allan", 15, 2314, "Ciencias");
         professores.add(professor);
 
         System.out.println(professores.size());
+
+        for (Professor professor1 : professores) {
+            System.out.println(professor1.getNome());
+        }
     }
 }
