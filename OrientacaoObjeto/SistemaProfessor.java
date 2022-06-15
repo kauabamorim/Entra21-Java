@@ -1,5 +1,9 @@
 package OrientacaoObjeto;
 
+import java.util.ArrayList;
+// import java.util.Collection;
+import java.util.List;
+
 import OrientacaoObjeto.Model.Entidade.Diretor;
 import OrientacaoObjeto.Model.Entidade.Funcionario;
 import OrientacaoObjeto.Model.Entidade.Professor;
@@ -7,15 +11,12 @@ import OrientacaoObjeto.Model.Entidade.Professor;
 public class SistemaProfessor {
     public static void main(String[] args) {
 
-        Funcionario[] funcionarios = new Funcionario[1];
+        List<Professor> professores = new ArrayList<Professor>();
+        System.out.println(professores.size());
 
-        funcionarios[0] = new Professor("Allan", 23, 8635695, "Ciencias da Computacao");
+        Professor professor = new Professor("A", 15, 2314, "Ciencias");
+        professores.add(professor);
 
-        Diretor xang = new Diretor("xang", 17, 15568498);
-
-        for (Funcionario funcionario : funcionarios) {
-            System.out.println(funcionario.getNome());
-        }
-        System.out.println("Salario Diretor: " + xang.calcularSalario(60f));
+        System.out.println(professores.size());
     }
 }

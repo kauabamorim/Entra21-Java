@@ -1,19 +1,24 @@
 package OrientacaoObjeto.Model.Entidade;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Turma {
     private String nome;
     private int codigo;
-    private int quantidadeAlunos;
     private Professor professor;
-    private Aluno[] alunos;   
+    private List<Aluno> alunos;
 
     public Turma (String nome, int codigo, Professor professor) {
         setNome(nome);
         setCodigo(codigo);
-        quantidadeAlunos = 0;
-        alunos = new Aluno[quantidadeAlunos];
+        alunos = new ArrayList<Aluno>();
     }
 
+
+    public List<Aluno> getAluno(){
+        return alunos;
+    }
 
     public Professor getProfessor(){
         return professor;
@@ -31,7 +36,6 @@ public class Turma {
         this.nome = nome;
     }
 
-
     public int getCodigo(){
         return codigo;
     }
@@ -39,29 +43,14 @@ public class Turma {
     public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
-    public Aluno[] getAlunos() {
-        return alunos;
-    }
 
     public boolean inserirAluno(Aluno aluno) {
-        if (!(quantidadeAlunos <= alunos.length)) {
-            return false;
-        }
-
-        alunos[quantidadeAlunos] = aluno;
-        quantidadeAlunos++;
-
-        return true;
+        return alunos.add(aluno);
     }
-    public boolean removerAluno(Aluno aluno) {
 
-        for (int i = 0; i < alunos.length; i++) {
-            if (alunos[i].getMatricula() == aluno.getMatricula()) {
-                alunos[i] = null;
-                return true;
-            }
-        }
-        return false;
+    public boolean removerAluno(Aluno aluno) {
+        return  alunos.remove(aluno);
+
     }
 }
 
