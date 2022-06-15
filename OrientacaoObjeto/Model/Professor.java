@@ -1,6 +1,6 @@
 package OrientacaoObjeto.Model;
 
-public class Professor extends  Usuario{
+public class Professor extends  Funcionario{
 
     // atributo
     private String formacao;
