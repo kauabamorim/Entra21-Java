@@ -1,6 +1,7 @@
 package OrientacaoObjeto.Model.Entidade;
 
 import OrientacaoObjeto.Model.Excecao.IdadeInvalida;
+import OrientacaoObjeto.Model.Excecao.MatriculaInvalidaException;
 import OrientacaoObjeto.Model.Excecao.NomeInvalidoException;
 
 public class Usuario {
@@ -10,7 +11,7 @@ public class Usuario {
     private int matricula;
 
 
-    public Usuario(String nome, int idade, int matricula) throws NomeInvalidoException, IdadeInvalida{
+    public Usuario(String nome, int idade, int matricula) throws NomeInvalidoException, IdadeInvalida, MatriculaInvalidaException{
         setNome(nome);
         setIdade(idade);
         setMatricula(matricula);
@@ -44,6 +45,10 @@ public class Usuario {
     }
 
     public void setMatricula(int matricula) {
+        if (matricula <= 0) {
+            throw new MatriculaInvalidaException(matricula);
+        }
+
         this.matricula = matricula;
     }
 }
