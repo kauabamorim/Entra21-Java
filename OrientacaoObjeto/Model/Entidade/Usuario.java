@@ -1,5 +1,7 @@
 package OrientacaoObjeto.Model.Entidade;
 
+import OrientacaoObjeto.Model.Excecao.NomeInvalidoException;
+
 public class Usuario {
 
     private String nome;
@@ -7,7 +9,7 @@ public class Usuario {
     private int matricula;
 
 
-    public Usuario(String nome, int idade, int matricula) {
+    public Usuario(String nome, int idade, int matricula) throws NomeInvalidoException{
         setNome(nome);
         setIdade(idade);
         setMatricula(matricula);
@@ -17,7 +19,12 @@ public class Usuario {
         return nome;
     }
 
-    public void setNome(String nome) {
+    public void setNome(String nome) throws NomeInvalidoException{
+        if (nome.length() <= 3) {
+            // throw - lancar 
+            throw new NomeInvalidoException(nome);
+        }
+
         this.nome = nome;
     }
 
