@@ -2,7 +2,6 @@ package OrientacaoObjeto.Model.Entidade;
 
 import OrientacaoObjeto.Model.Excecao.IdadeInvalida;
 import OrientacaoObjeto.Model.Excecao.NomeInvalidoException;
-import lista01.idade;
 
 public class Usuario {
 
