@@ -13,11 +13,14 @@ public class SistemaProfessor {
 
         List<Professor> professores = new ArrayList<Professor>();
 
-        Professor professor = new Professor("Allan", 15, 2314, "Ciencias");
-        professores.add(professor);
+        Professor allan = new Professor("Allan", 15, 2314, "Ciencias");
+        professores.add(allan);
 
-        for (Professor professor1 : professores) {
-            System.out.println(professor1.getNome());
+        Professor  carlos = new Professor("Carlos", 18, 2324546, "Math");
+        professores.add(carlos);
+
+        for (Professor professor : professores) {
+            System.out.println("Nome: " + professor.getNome() + "\nMatricula: " + professor.getMatricula());
         }
     }
 }
