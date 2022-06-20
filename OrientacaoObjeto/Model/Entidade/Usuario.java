@@ -11,7 +11,7 @@ public class Usuario {
     private int matricula;
 
 
-    public Usuario(String nome, int idade, int matricula) throws NomeInvalidoException{
+    public Usuario(String nome, int idade, int matricula) throws NomeInvalidoException, IdadeInvalida{
         setNome(nome);
         setIdade(idade);
         setMatricula(matricula);
