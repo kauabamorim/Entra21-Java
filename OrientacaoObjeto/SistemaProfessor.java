@@ -13,7 +13,7 @@ public class SistemaProfessor {
 
         List<Professor> professores = new ArrayList<Professor>();
 
-        Professor allan = new Professor("Allan", 15, 2314, "Ciencias");
+        Professor allan = new Professor("Allan", 25, 2314, "Ciencias");
         professores.add(allan);
 
         Professor  carlos = new Professor("Carlos", 18, 2324546, "Math");

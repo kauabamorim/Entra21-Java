@@ -1,6 +1,8 @@
 package OrientacaoObjeto.Model.Entidade;
 
+import OrientacaoObjeto.Model.Excecao.IdadeInvalida;
 import OrientacaoObjeto.Model.Excecao.NomeInvalidoException;
+import lista01.idade;
 
 public class Usuario {
 
@@ -33,6 +35,9 @@ public class Usuario {
     }
 
     public void setIdade(int idade) {
+        if (idade <= 0 || idade > 110) {
+            throw new IdadeInvalida(idade);
+        }
         this.idade = idade;
     }
     public int getMatricula(){
