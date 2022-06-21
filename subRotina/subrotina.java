@@ -1,3 +1,5 @@
+package subRotina;
+
 public class subrotina {
     public static void main(String[] args) {
         int soma = somar(5, 3);

@@ -1,3 +1,4 @@
+package subRotina;
 
 public class primoSubRotina {
     public static void main(String[] args) {

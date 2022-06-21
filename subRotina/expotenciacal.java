@@ -1,4 +1,4 @@
-import java.util.Scanner;
+package subRotina;
 
 public class expotenciacal {
     public static void main(String[] args) {
